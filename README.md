@@ -10,7 +10,7 @@
 
 ### Evidence  
 ! [Detection Phase](detection.png)
-! [Neutralization Phase](neutralization.png)
+! [Neutralization Phase](neutralization.png) 
 
 ### Tools Used:
 * `ps aux` - Process status (all users)
