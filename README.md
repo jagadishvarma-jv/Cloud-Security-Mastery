@@ -34,3 +34,21 @@
 
 ### Evidence:
 ![Hardened Permissions Proof](secured.png)
+
+---
+
+## Lab 3: Network Auditing & Socket Security
+**Objective:** Identify active network listeners and analyze the system's "Attack Surface" by auditing open ports.
+
+### Steps Taken:
+1. **Network Scan:** Used the `ss -tulpn` command to list all active TCP and UDP listening sockets.
+2. **Threat Simulation:** Opened a temporary listener on port `4444` using `nc -l 4444`.
+3. **Audit & Cleanup:** Verified the open port in the process list and terminated the listener to return to a secure state.
+
+### Tools Used:
+* `ss` - Socket Statistics tool (modern replacement for `netstat`).
+* `nc` (Netcat) - Used for reading/writing data across network connections.
+* `grep` - To filter specific port numbers from the results.
+
+### Evidence:
+![Network Audit Proof](attack.png)
