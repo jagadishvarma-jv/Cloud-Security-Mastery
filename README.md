@@ -8,6 +8,12 @@
 2. **Filtering:** Used `grep` to isolate a suspicious `sleep` process acting as a placeholder for a malicious task.
 3. **Neutralization:** Executed `kill -9 [PID]` to force-terminate the process immediately.
 
+### Evidence  
+! [Detection Phase]
+detection.png
+! [Neutralization Phase]
+neutralization.png
+
 ### Tools Used:
 * `ps aux` - Process status (all users)
 * `grep` - Pattern matching
