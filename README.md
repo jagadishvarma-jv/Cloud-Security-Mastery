@@ -52,3 +52,24 @@
 
 ### Evidence:
 ![Network Audit Proof](attack.png)
+
+---
+
+## Lab 4: Security Log Auditing & Incident Investigation
+**Objective:** Perform a deep-dive audit of system logs to identify user activity, administrative escalations, and potential backdoors.
+
+### Steps Taken:
+1. **Accessing Logs:** Audited the `/var/log/auth.log` file using `sudo` privileges.
+2. **Session Auditing:** Tracked "session opened" events to monitor user login/logout patterns.
+3. **Account Monitoring:** Searched for "new user" entries to ensure no unauthorized backdoor accounts were created.
+4. **Command Logging:** Extracted a history of executed `sudo` commands to verify administrative accountability.
+
+### Tools Used:
+* `grep -a` - To force-read logs as text and filter for specific security keywords.
+* `tail` - To focus the investigation on the most recent system events.
+* `auth.log` - The central repository for all Linux authentication data.
+
+### Evidence:
+![System Security Audit](lab4(1).png)
+![System Security Audit](lab4(2).png)
+![System Security Audit](lab4(3).png)
