@@ -9,10 +9,8 @@
 3. **Neutralization:** Executed `kill -9 [PID]` to force-terminate the process immediately.
 
 ### Evidence  
-! [Detection Phase]
-detection.png
-! [Neutralization Phase]
-neutralization.png
+! [Detection Phase](detection.png)
+! [Neutralization Phase](neutralization.png)
 
 ### Tools Used:
 * `ps aux` - Process status (all users)
