@@ -110,3 +110,21 @@
 ### Evidence:
 1. **Config View:** ![SSH Nano Config](lab6(1).png)
 2. **Activation View:** ![SSH Success](lab6(2).png)
+---
+
+## Lab 7: Security Automation (Bash Scripting)
+**Objective:** Create a custom automated tool to audit system security posture in a single command.
+
+### Steps Taken:
+1. **Script Development (Nano):** Created a Bash script to pull data from UFW (Firewall), SSH configuration, and Auth logs.
+2. **Permissions:** Applied `chmod +x` to make the script an executable program.
+3. **Automated Auditing:** Executed the script in the WSL terminal to generate a real-time security health report.
+
+### Evidence:
+* **The Script (Nano View):** [lab7(2).png]
+* **The Result (WSL Terminal):** [lab7(1).png]
+
+### Tools Used:
+* **Bash** - For logic and automation.
+* **UFW & SSHD** - The security services being audited.
+* **WSL (Ubuntu)** - The Linux environment where the tool was deployed.
