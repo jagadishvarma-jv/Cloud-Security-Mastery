@@ -73,3 +73,20 @@
 ![System Security Audit](lab4(1).png)
 ![System Security Audit](lab4(2).png)
 ![System Security Audit](lab4(3).png)
+
+---
+
+## Lab 5: Network Hardening with UFW Firewall
+**Objective:** Secure the system by implementing a "Deny-by-Default" firewall policy to minimize the network attack surface.
+
+### Steps Taken:
+1. **Policy Configuration:** Set default rules to `deny incoming` and `allow outgoing` to prevent unauthorized external access.
+2. **Service Protection:** Explicitly allowed traffic only on Port 22 (SSH) to maintain secure administrative access.
+3. **Activation:** Enabled the Uncomplicated Firewall (UFW) and verified the active rule set.
+
+### Tools Used:
+* `UFW` (Uncomplicated Firewall) - A user-friendly interface for managing iptables.
+* `ufw status verbose` - Used to audit the active security posture and logging status.
+
+### Evidence:
+![Firewall Protection Proof](lab5.png)
