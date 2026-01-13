@@ -121,7 +121,7 @@
 3. **Automated Auditing:** Executed the script in the WSL terminal to generate a real-time security health report.
 
 ### Evidence:
-* **The Script (Nano View):** [lab7(2).png]
+* **The Script (Nano View)(lab7(2).png)
 * **The Result (WSL Terminal):** [lab7(1).png]
 
 ### Tools Used:
