@@ -90,3 +90,23 @@
 
 ### Evidence:
 ![Firewall Protection Proof](lab5.png)
+
+---
+
+## Lab 6: SSH Hardening & Environment Troubleshooting
+**Objective:** Secure the OpenSSH server by disabling Root login and resolving service-level errors.
+
+### Steps Taken:
+1. **Rule Modification (Nano):** Accessed `/etc/ssh/sshd_config` to set `PermitRootLogin no`. This is a critical hardening step to prevent brute-force attacks on the root account.
+2. **Configuration Audit:** Executed `sudo sshd -t` to perform a syntax check.
+3. **Service Management:** Successfully restarted the SSH daemon using `systemctl`.
+4. **Resiliency:** Identified a command typo and manually corrected it to finalize the service update.
+
+### Tools Used:
+* **GNU Nano:** Used for precision editing of system configuration files.
+* **SSHD Daemon:** The background service managing secure remote connections.
+* **Systemctl:** The interface for controlling system services and verifying uptime.
+
+### Evidence:
+1. **Config View:** ![SSH Nano Config](lab6(1).png)
+2. **Activation View:** ![SSH Success](lab6(2).png)
