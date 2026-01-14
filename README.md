@@ -144,3 +144,21 @@
 
 ### Evidence:
 * **Full Workflow:** ![Lab 8 Encryption Workflow](lab8.png)
+
+  ## Lab 9: Identity & Access Management (IAM)
+**Objective:** Implement the "Principle of Least Privilege" by creating a restricted service account for system auditing.
+
+### Steps Taken:
+1. **User Provisioning:** Created a new restricted user `auditor` to simulate a Junior Security Analyst role.
+2. **Access Control:** Verified that the auditor account is restricted from accessing sensitive administrative directories by default.
+3. **Role-Based Access Control (RBAC):** Assigned the auditor to the `adm` system group, granting specific permission to read system logs without granting full sudo/root privileges.
+4. **Security Testing:** Verified the auditor can perform log analysis but remains blocked from modifying or deleting encrypted data-at-rest.
+
+### Tools Used:
+* **IAM Logic:** Controlling access via Users and Groups.
+* **usermod:** Used to manage user attributes and group memberships.
+* **Permissions (ACLs):** Enforcing boundaries between different user roles.
+
+### Evidence:
+* **IAM Verification:** ![Lab 9 Auditor Permissions](lab9.png)
+![Lab 9 Auditor Permissions](lab9b,png)
