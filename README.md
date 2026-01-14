@@ -128,3 +128,19 @@
 * **Bash** - For logic and automation.
 * **UFW & SSHD** - The security services being audited.
 * **WSL (Ubuntu)** - The Linux environment where the tool was deployed.
+
+  ## Lab 8: Cryptography & Data at Rest Protection
+**Objective:** Secure sensitive administrative credentials using AES-256 symmetric encryption to prevent data exposure.
+
+### Steps Taken:
+1. **Data Creation:** Generated a simulated sensitive file (`secret.txt`) containing server credentials.
+2. **Symmetric Encryption:** Utilized **GnuPG (GPG)** to encrypt the file, creating a secure binary version that requires a passphrase.
+3. **Data Sanitization:** Removed the plaintext version of the file to ensure only the encrypted "Ciphertext" remains on the disk.
+4. **Verification:** Confirmed the file is unreadable using the `cat` command, proving data-at-rest protection.
+
+### Tools Used:
+* **GnuPG (GPG):** Industry-standard tool for data encryption.
+* **Linux CLI:** Used for file management and security auditing.
+
+### Evidence:
+* **Full Workflow:** ![Lab 8 Encryption Workflow](lab8.png)
