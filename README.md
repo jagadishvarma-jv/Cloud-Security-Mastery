@@ -161,4 +161,4 @@
 
 ### Evidence:
 * **IAM Verification:** ![Lab 9 Auditor Permissions](lab9.png)
-![Lab 9 Auditor Permissions](lab9b,png)
+![Lab 9 Auditor Permissions](lab9b.png)
