@@ -188,4 +188,4 @@
 4. **Result:** Confirmed that the OS correctly enforced the security boundary with a "Permission Denied" response.
 
 ### Evidence:
-* **Final Lockdown:** [lab11.png]
+* **[Final Lockdown](lab11.png)
