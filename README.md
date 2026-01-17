@@ -189,3 +189,19 @@
 
 ### Evidence:
 * **[Final Lockdown](lab11.png)
+
+## Lab 12: Vulnerability Scanning & System Audit
+**Objective:** Perform a comprehensive security audit using Lynis to validate system hardening and identify remaining vulnerabilities.
+
+### Steps Taken:
+1. **Tool Installation:** Deployed **Lynis**, a professional-grade security auditing tool for Linux-based systems.
+2. **Automated Audit:** Performed a full-system scan covering boot procedures, kernel hardening, memory, and networking.
+3. **Metric Analysis:** Evaluated the **Hardening Index** score to quantify the effectiveness of the security controls implemented in previous labs.
+4. **Continuous Improvement:** Reviewed the "Suggestions" report to plan future security patches and configuration updates.
+
+### Tools Used:
+* **Lynis:** Industry-standard security auditing and vulnerability scanning tool.
+* **Security Benchmarking:** Establishing a baseline for system safety.
+
+### Evidence:
+* **[Final Audit Score](lab12.png)
