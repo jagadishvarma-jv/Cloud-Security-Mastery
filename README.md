@@ -177,3 +177,15 @@
 
 ### Evidence:
 * **Stealth Verification:** ![Lab 10 Ping Timeout](lab10.png)
+
+## Lab 11: Storage Bucket Security & Leak Prevention
+**Objective:** Simulate Cloud Storage (S3) security by implementing strict Access Control Lists (ACLs).
+
+### Steps Taken:
+1. **Cloud Simulation:** Created a directory structure representing a private data bucket.
+2. **Hardening:** Used `chmod 600` to strip all "Public Read" permissions from the sensitive database file.
+3. **IAM Verification:** Used the `auditor` service account to attempt an unauthorized read.
+4. **Result:** Confirmed that the OS correctly enforced the security boundary with a "Permission Denied" response.
+
+### Evidence:
+* **Final Lockdown:** [lab11.png]
