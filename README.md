@@ -162,3 +162,18 @@
 ### Evidence:
 * **IAM Verification:** ![Lab 9 Auditor Permissions](lab9.png)
 ![Lab 9 Auditor Permissions](lab9b.png)
+
+## Lab 10: Cloud VM Hardening & Stealth Configuration
+**Objective:** Reduce the attack surface of a Cloud Virtual Machine by disabling ICMP responses to prevent network discovery (Reconnaissance).
+
+### Steps Taken:
+1. **Vulnerability Assessment:** Confirmed the server was discoverable via ICMP Echo Requests (Ping).
+2. **Kernel Hardening:** Modified the `net.ipv4.icmp_echo_ignore_all` kernel parameter using the `sysctl` utility.
+3. **Verification:** Validated that the server no longer responds to pings, effectively hiding the instance from automated network scanners and "ping sweeps."
+
+### Tools Used:
+* **sysctl:** Interface used to modify kernel parameters at runtime.
+* **ICMP Protocol:** The network layer protocol used for diagnostic and discovery tools.
+
+### Evidence:
+* **Stealth Verification:** ![Lab 10 Ping Timeout](lab10.png)
